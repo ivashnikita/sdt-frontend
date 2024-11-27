@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes animate {
+    0% {
+        content: "Ожидайте обработки файлов";
+    }
+    33.33% {
+        content: "Hello 2";
+    }
+    66.66% {
+        content: "Hello 3";
+    }
+    100% {
+        content: "Hello 4";
+    }
+}
+
+p{
+    margin-top: 10px;
+    font: 23px Montserrat-Bold, sans-serif;
+}
+
+.line p {
+    animation: animate 2s infinite;
+}
+
+.data_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bacteria_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.vagina_border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px dashed blueviolet;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.vagina_type {
+
+}
+
+.vagina_description {
+    font-size: 14px;
+}
+
+.bacteria_row_good {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+    min-height: 30px;
+    border-radius: 10px;
+    background-color: #2ad117;
+    font: 13px Montserrat-Bold, sans-serif;
+    color: black;
+}
+
+.bacteria_row_idk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+    min-height: 30px;
+    border-radius: 10px;
+    background-color: #f57a07;
+    font: 13px Montserrat-Bold, sans-serif;
+    color: white;
+}
+
+.bacteria_row_bad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+    min-height: 30px;
+    border-radius: 10px;
+    background-color: #de200b;
+    font: 13px Montserrat-Bold, sans-serif;
+    color: white;
+}
+
+@media (width <= 400px) {
+    .vagina_description {
+    font-size: 10px;
+        max-width: 200px;
+    }
+    .bacteria_container {
+        max-width: 200px;
+    }
+
+    .bacteria_row_good {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 800px;
+        min-height: 30px;
+        border-radius: 10px;
+        background-color: #2ad117;
+        font: 8px Montserrat-Bold, sans-serif;
+        color: black;
+        max-width: 200px;
+    }
+
+    .bacteria_row_idk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 800px;
+        min-height: 30px;
+        border-radius: 10px;
+        background-color: #f57a07;
+        font: 8px Montserrat-Bold, sans-serif;
+        color: white;
+        max-width: 200px;
+    }
+
+    .bacteria_row_bad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 800px;
+        min-height: 30px;
+        max-width: 200px;
+        border-radius: 10px;
+        background-color: #de200b;
+        font: 8px Montserrat-Bold, sans-serif;
+        color: white;
+    }
+}
